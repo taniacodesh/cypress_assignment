@@ -1,0 +1,23 @@
+{
+  "name": "cypressautomation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test1:chrome": "cypress run --spec 'cypress/e2e/features/imdbTest.feature' --browser chrome --headed --env tags=@important",
+    "test1:firefox": "cypress run --spec 'cypress/e2e/features/imdbTest.feature' --browser firefox --headed --env tags=@important",
+    "tests:api": "cypress run --spec 'cypress/e2e/features/apiTest.feature'",
+    "tests:imdb": "cypress run --spec 'cypress/e2e/features/imdbTest.feature'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^21.0.2",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.3",
+    "@cypress/browserify-preprocessor": "^3.0.2",
+    "@cypress/webpack-preprocessor": "^6.0.2",
+    "@testing-library/cypress": "^10.0.2",
+    "cypress": "^13.15.0"
+  }
+}
